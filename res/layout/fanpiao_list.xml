@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="7dp"
+        android:textColor="@color/blue"
+        android:text="餐厅已确认 30分钟前" />
+
+    <ImageView
+        android:id="@+id/fanpiao_list_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/textView1"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/fanpiao_list_resName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/fanpiao_list_imageView"
+        android:layout_toRightOf="@+id/fanpiao_list_imageView"
+        android:text="海港川菜馆" />
+
+    <TextView
+        android:id="@+id/fanpiao_list_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:layout_alignBottom="@+id/fanpiao_list_imageView"
+        android:layout_toRightOf="@+id/textView4"
+        android:text="￥12" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fanpiao_list_imageView"
+        android:layout_toRightOf="@+id/fanpiao_list_imageView"
+        android:text="1份" />
+
+</RelativeLayout>

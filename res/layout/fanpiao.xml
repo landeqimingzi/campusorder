@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/fanpiao_title"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:textSize="26dp"
+        android:background="#48D1CC"
+        android:text="我的饭票" />
+
+    <TextView
+        android:id="@+id/fanpiao_noDtata"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+       
+        android:text="我的饭票空空如也,赶快去商家页面下单吧" />
+
+    <ListView
+        android:id="@+id/fanpiao_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

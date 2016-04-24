@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <include layout="@layout/reuse_title2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#CCCCCC"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/restaurant_tab_menu"
+			style="@style/restaurant_text"
+            android:text="@string/menu" />
+        <View 
+            android:layout_width="0.8dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/restaurant_tab_pic"
+          	style="@style/restaurant_text"
+            android:text="@string/pic" />
+        <View 
+            android:layout_width="0.8dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/black"
+            />
+        <TextView
+            android:id="@+id/restaurant_tab_eva"
+            style="@style/restaurant_text"
+            android:text="@string/eva" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" >
+
+        <ListView
+            android:id="@+id/restaurant_sort_list"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+             >
+        </ListView>
+
+        <ListView
+            android:id="@+id/restaurant_listing_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp" >
+
+        <ImageView
+            android:id="@+id/restaurant_shopImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/shopping" />
+
+        <TextView
+            android:id="@+id/my_hint2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:text="￥"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/restaurant_totalprice_txt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0.8dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/black" />
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp" >
+
+            <Button
+                android:id="@+id/restaurant_settlement_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="#B0B0B0"
+                android:text="选好了"
+                android:visibility="gone"
+                 />
+			<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical"
+			    android:id="@+id/restaurant_frame_linea"
+			    >
+	            <TextView
+	                android:id="@+id/restaurant_disprice_txt"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:gravity="center_horizontal"
+	                android:layout_marginTop="8dp"
+	                android:text="0元起送" />
+	
+	            <TextView
+	                android:id="@+id/restaurant_lable"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="bottom"
+	                android:gravity="center_horizontal"
+	                android:paddingBottom="5dp"
+	                android:text="可堂食" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    
+</LinearLayout>

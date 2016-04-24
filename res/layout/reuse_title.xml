@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="#B4CDCD"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/title_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/back_ico" />
+
+    <Spinner
+        android:id="@+id/title_spinner"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@null"
+ 
+        android:gravity="center_vertical" />
+
+    <ImageButton
+        android:id="@+id/title_search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/search_ico" />
+
+</LinearLayout>
